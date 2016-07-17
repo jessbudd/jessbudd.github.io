@@ -1,0 +1,88 @@
+
+
+
+
+/*======GLOBAL======*/
+
+body {
+	margin-top:70px;
+}
+
+footer {
+	text-align: center;
+	padding: 4% 0 10px 0;
+	font-size: 3.5vmin;
+
+}
+
+
+
+/*=======NAV======*/
+
+.navbar-default {
+	background:white;
+}
+
+
+
+
+/*======HOME PAGE=======*/
+
+#intro {
+	text-align: center;
+}
+.intro1 {
+	font-size: 15vmin;
+}
+.intro2 {
+	font-size: 10vmin;
+}
+.intro1, 
+.intro2 {
+		padding: 4% 1%;
+}
+.fa {
+	font-size:15vmin;
+	padding: 6% 1.5%;
+}
+a {
+	color:black;
+	transition: 0.3s;
+}
+a:hover,
+a:active,
+a:focus {
+	color:red;
+}
+
+
+
+/*=======ABOUT PAGE=======*/
+
+
+
+
+
+
+
+
+/*=======PROJECTS PAGE=====*/
+
+
+
+
+/*=======MEDIA QUERIES======*/
+
+
+/*Tablets and desktops*/
+
+@media screen and (min-width: 970px) {
+.intro1, 
+.intro2 {
+		padding: 3% .5%;
+}
+.fa {
+	font-size:15vmin;
+	padding: 3% 1%;
+}
+}
