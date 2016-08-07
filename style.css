@@ -125,6 +125,7 @@ a:focus {
 
 .container {
 	max-width: 1100px;
+	margin:auto;
 }
 .intro1, 
 .intro2 {
