@@ -18,10 +18,9 @@ hr {
 .row:after {
     content: " "; /* 1 */
     display: table; /* 2 */
-}
-.row:after {
     clear: both;
 }
+
 h1 {
 	font-size: 3em;
 }
@@ -121,10 +120,10 @@ a:focus {
 
 /*Tablets and desktops*/
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 760px) {
 
 .container {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin:auto;
 }
 .intro1, 
