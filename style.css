@@ -5,7 +5,7 @@
 
 body {
 	font-family: arial; 
-	font-size: 3vmin;
+	font-size: 1em;
 	margin: 0 0;
 	color: #222;
 	max-width:1200px;
@@ -14,11 +14,13 @@ body {
 
 footer {
 	text-align: center;
+	color: #222;
 }
 
 
 .row:before,
-.row:after {
+.row:after, 
+.clear {
     content: " "; /* 1 */
     display: table; /* 2 */
     clear: both;
@@ -41,8 +43,9 @@ ul {
 	float: right;
 	margin: 0 0; 
 	display: inline-block;
-	padding: 20px 0;
+	padding: 10px 0;
 	border-bottom:1px solid #fff;
+		color:#ff4447;
 }
 .nav-item {
 	display: inline-block;
@@ -68,34 +71,39 @@ ul {
 }
 .intro1 {
 	font-size: 10vmin;
-}
-.intro2 {
-	font-size: 6vmin;
-}
-.intro1, 
-.intro2 {
 	padding: 3% 1%;
 }
+.intro2 {
+	font-size: 7vmin;
+	padding: 0 1% 5% 1%;
+}
+
 .fa {
 	font-size:14vmin;
 	padding: 10px;
 	color:#ff4447;
+	transition: .2s;
+}
+.fa:hover, 
+.fa:active,
+.fa:focus {
+		color:#ffa6a7;
 }
 .social {
 	border: 5px solid #fff;
 	max-width: 18vmin;
 	text-align: center;
+	margin: 20px 0 10px 0;
 }
 a {
-	color:black;
-	transition: 0.3s;
+	color:#ff4447;
+	transition: 0.2s;
 	text-decoration: none;
 }
 a:hover,
 a:active,
 a:focus {
-	color:red;
-
+	color:#ffa6a7;
 }
 
 /*=======ABOUT PAGE=======*/
