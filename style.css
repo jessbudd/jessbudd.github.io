@@ -155,11 +155,11 @@ a:focus {
 .about-text {
 	font-size:1.5em;
 	line-height:1.5;
-	padding-bottom:30px;
+	padding-top: 20px;
 	width:100%;
 }
 .container-about {
-	padding: 100px 20px 540px 20px;
+	padding: 130px 20px 540px 20px;
 }
 }
 
