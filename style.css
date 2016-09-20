@@ -1,6 +1,3 @@
-
-
-
 /*======GLOBAL======*/
 
 body {
@@ -9,7 +6,6 @@ body {
 	max-width:1200px;
 	margin: 0 auto;
 }
-
 footer {
 	text-align: center;
 	color: #222;
@@ -31,7 +27,6 @@ footer {
     display: table; /* 2 */
     clear: both;
 }
-
 
 /*=======NAV======*/
 
@@ -56,7 +51,6 @@ ul {
 }
 
 @media screen and (min-width: 480px) {
-
 .nav-item {
 	padding: 5px 15px;
 	font-size: 3.5vmin;
@@ -65,16 +59,13 @@ ul {
 
 /*======HOME PAGE=======*/
 
-
 .home-page {
 	max-width: 1200px;
 	padding: 0 5% 10% 5%;
 	background-image: url("images/bg-pic.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
-/*	background-position: left bottom;
-*/}
-
+}
 #intro {
 	padding-top:8%;
 }
@@ -86,7 +77,6 @@ ul {
 	font-size: 7vmin;
 	padding: 0 1% 5% 1%;
 }
-
 .fa {
 	font-size:14vmin;
 	padding: 10px;
@@ -103,6 +93,7 @@ ul {
 	max-width: 18vmin;
 	text-align: center;
 	margin: 20px 0 10px 0;
+	border-radius: 5px;
 }
 a,
 a:visited {
@@ -119,7 +110,7 @@ a:focus {
 /*=======ABOUT PAGE=======*/
 
 .container-about {
-	margin: 0 20px;
+	margin: 0 0px;
 	padding: 80px 20px 20px 20px;
 	background-image: url("images/bg-pic.jpg");
 	background-repeat:no-repeat;
@@ -132,7 +123,8 @@ a:focus {
 	-webkit-border-radius:50%;
 	width: 200px;
 }
-.about-head {
+.about-head,
+.projects-head {
 	padding-bottom: 10px;
 	text-align: center;
 	}
@@ -143,7 +135,6 @@ a:focus {
 	max-width: 900px;
 	margin: 0 auto;
 }
-
 
 @media screen and (min-width: 480px) {
 .about-text {
@@ -157,14 +148,15 @@ a:focus {
 }
 }
 @media screen and (min-width: 800px) {
+.about-head, 
+.projects-head {
+	font-size:3em;
+}
 .about-text {
 	font-size:1.5em;
 	line-height:1.5;
 	padding-bottom:30px;
 	width:100%;
-}
-.about-head {
-	font-size:3em;
 }
 .container-about {
 	padding: 100px 20px 540px 20px;
@@ -173,8 +165,25 @@ a:focus {
 
 /*=======PROJECTS PAGE=====*/
 
-.page-header {
-	padding-top:50px;
+.container-projects {
+	padding: 80px 0 60px 0;
+	background-image: url("images/bg-plain.jpg");
+	background-repeat:repeat;
+	background-size: 100%;
+	background-position: top left;
+}
+.projects-head {
+	padding:50px 0;
+}
+h3 {
+	font-size: 2em;
+	color: #ff4447;
+}
+h4 {
+
+}
+.text-box p {
+		padding:5%;
 }
 .tag {
 	padding-bottom: 30px;
@@ -183,18 +192,40 @@ a:focus {
 	width:100%;
 	float:left;
 }
-.text {
-	width:100%;
+.text-box {
+	width: 100%;
+	height:400px;
 	float:left;
+	margin: 0 0 ;
+	text-align: center;
 }
+.alt {
+	background: #fff;
 
+}
+button {
+ 	display: inline;	
+	font: bold 1.3em;
+	text-decoration:none;	
+	background-color:transparent;
+	height: 80px;
+	width: 250px;
+	transition: .3s;
+	margin-bottom: 50px;
+}
 .project-link {
 	font-weight: bold;
+	color: #ff4447;
+	border: #ff4447 2px solid;
+}
+.project-link a {
+	padding:50px 76px;
 }
 .project-link:hover,
 .project-link:active {
-	text-decoration: underline;
+	text-decoration: none;
 	transition: 0.2s;
+	border:#ffa6a7 2px solid;
 }
 /*=======MEDIA QUERIES======*/
 
@@ -207,9 +238,8 @@ a:focus {
 	width:50%;
 	float:left;
 }
-.text {
-	padding-left: 2%;
-	width: 48%;
+.text-box {
+	width: 50%;
 	float: left;
 }
 }
