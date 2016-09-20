@@ -1,17 +1,21 @@
+
+
+
 /*======GLOBAL======*/
 
 body {
-	font-family: arial;
-	margin: 0 2%;
+	font-family: arial; 
+	font-size: 3vmin;
+	margin: 0 0;
+	color: #222;
+	max-width:1200px;
+	margin: 0 auto;
 }
+
 footer {
 	text-align: center;
-	padding: 4% 0 10px 0;
-	font-size: 3vmin;
 }
-hr {
-	margin: 50px 0;
-}
+
 
 .row:before,
 .row:after {
@@ -27,9 +31,18 @@ h1 {
 
 /*=======NAV======*/
 
+header {
+	background: #fff;
+	display:block;
+	width:100%;
+	float:left;
+}
 ul {
 	float: right;
 	margin: 0 0; 
+	display: inline-block;
+	padding: 20px 0;
+	border-bottom:1px solid #fff;
 }
 .nav-item {
 	display: inline-block;
@@ -40,26 +53,38 @@ ul {
 
 /*======HOME PAGE=======*/
 
+
+.home-page {
+	max-width: 1200px;
+	padding: 0 5% 10% 5%;
+	background-image: url("images/bg-pic.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+/*	background-position: left bottom;
+*/}
+
 #intro {
-	text-align: center;
-	padding-top:10%;
+	padding-top:8%;
 }
 .intro1 {
-	font-size: 11vmin;
+	font-size: 10vmin;
 }
 .intro2 {
-	font-size: 8vmin;
+	font-size: 6vmin;
 }
 .intro1, 
 .intro2 {
-		padding: 4% 1%;
+	padding: 3% 1%;
 }
 .fa {
-	font-size:15vmin;
-	padding: 6% 1.5%;
+	font-size:14vmin;
+	padding: 10px;
+	color:#ff4447;
 }
 .social {
-		text-align: center;
+	border: 5px solid #fff;
+	max-width: 18vmin;
+	text-align: center;
 }
 a {
 	color:black;
@@ -121,18 +146,6 @@ a:focus {
 
 @media screen and (min-width: 760px) {
 
-.container {
-	max-width: 1200px;
-	margin:auto;
-}
-.intro1, 
-.intro2 {
-	padding: 3% .5%;
-}
-.fa {
-	font-size:15vmin;
-	padding: 3% 1%;
-}
 .img-resp {
 	width:50%;
 	float:left;
