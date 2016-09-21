@@ -63,10 +63,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jessica Budd">
     <meta name="description" content="Projects of Jessica Budd, Perth based front end developer">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.jpg">
+
+
 
 </head>
 
@@ -92,23 +92,51 @@
              <h1 class="projects-head">Projects</h1>
             </div>
 
-        <!-- 30th Anniversary Fair -->
-        <div class="row"> 
-            <div class="img-port">
+
+
+
+        <div id="effect-1" class="effects row">
+            <div class="img img-port">
                 <img src="images/FCF3.jpg" alt="">
+                <div class="overlay">
+                    <h3>Anniversary Fair</h3>
+                    <h4>Design | Custom Wordpress&nbsp;| PHP&nbsp;| Marketing</h4>
+                    <a href="#" class="expand">View Project</a></button>
+                    <!-- <a class="close-overlay hidden">x</a> -->
+                </div>
             </div>
+
+
+
+        <!-- 30th Anniversary Fair -->
+        <div id="effect-1" class="effects row"> 
+            <div class="img img-port">
+                <img src="images/FCF3.jpg" alt="Basket of raspberries">
+                <div class="overlay">
+                    <h3>Anniversary Fair</h3>
+                    <h4>Design | Custom Wordpress&nbsp;| PHP&nbsp;| Marketing</h4>
+                    <a href="#" class="expand">View Project</a>
+                    <!-- <a class="close-overlay hidden">x</a> -->
+                </div><!--overlay-->
+                </div><!--img-port-->
             <div class="text-box">
                 <h3>Anniversary Fair</h3>
-                <h4>Custom Wordpress Theme&nbsp;| PHP&nbsp;Graphic&nbsp;Design&nbsp;|&nbsp;Marketing </h4>
+                <h4>Design | Custom Wordpress Theme&nbsp;| PHP&nbsp;| Graphic&nbsp;Design&nbsp;| Marketing&nbsp;| Mailchimp</h4>
                 <button class="project-link"><a href="http://forestcrescentfair.com" target="_blank">View Project</a></button>
             </div>
         </div>
+
+
+
+
+
+
 
         <!-- Lorelei Jayne-->
         <div class="row">
             <div class="text-box">
                 <h3>Lorelei Jayne</h3>
-                <h4>Redesign | E-Commerce | Wordpress&nbsp;|&nbsp;CSS3</h4>
+                <h4>Redesign | WooCommerce | Wordpress&nbsp;| PHP&nbsp;| CSS3</h4>
 
                 <button class="project-link"><a href="http://loreleijayne.com" target="blank">View Project</a></button>
             </div>
@@ -126,7 +154,7 @@
             </div>
             <div class="text-box alt">
                 <h3>Perth's Pink Painter</h3>
-                <h4>Wireframing | Design | CSS3 | Bootstrap&nbsp;|&nbsp;jQuery</h4>
+                <h4>Wireframing | Design | Bootstrap&nbsp;|&nbsp;jQuery&nbsp;| CSS3</h4>
 
                 <button class="project-link"><a href="http://www.perthspinkpainter.com.au" target="_blank">View Project</a></button>
             </div>
@@ -137,7 +165,7 @@
     <div class="row">
             <div class="text-box">
                 <h3>Small Business</h3>
-                <h4>WordPress | CSS3 | jQuery</h4>
+                <h4>WordPress | PHP | jQuery&nbsp;| CSS3</h4>
                  <button class="project-link"><a href="http://jessica-budd.com" target="blank">View Project</a></button>
             </div>
             <div  class="img-port">
@@ -156,18 +184,44 @@
         <p class="footer">&copy; copyright 2016. <a href="http://www.jessica-budd.com" target="_blank">Jessica Budd</a></p>
 </footer>
 
+    <script src="js/modernizr.js"></script>
+
     <!-- CDN jQuery-->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-
     <!--local jQuery if CDN fails to load-->
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');</script>
 
 
-
 <script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
 </script>
 
 
@@ -175,12 +229,3 @@
 
 </html>
 
-
-
-<!--  <p>I designed all print and web marketing for a local Primary School's 30th Anniversary Fair. A child theme was customised under the Genesis framework which involved basic php, hooks, CSS, jQuery and javascript. A mailchimp newsletter was created and integrated.</p>
-
-                 <p>This website was created in WordPress as a means of promoting myself to small local businesses. The theme incorporates a "Typeform" integration and maths question captcha contact form. </p>
-
-                                 <p>I designed this responsive website for a small local business based around their existing branding. It was developed using the bootstrap framework and jQuery. I organised registration of the domain name, hosting and launch on their behalf. </p>
-
-                                                 <p>This project involved converting a static website into a dynamic custom Wordpress theme.</p> -->
