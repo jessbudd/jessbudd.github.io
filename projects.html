@@ -99,7 +99,7 @@
             </div>
             <div class="text-box">
                 <h3>30th Anniversary Fair</h3>
-                <h4>Custom Wordpress Theme | Graphic&nbsp;Design&nbsp;|&nbsp;Marketing </h4>
+                <h4>Custom Wordpress Theme&nbsp;| PHP&nbsp;Graphic&nbsp;Design&nbsp;|&nbsp;Marketing </h4>
                 <button class="project-link"><a href="http://forestcrescentfair.com" target="_blank">View Project</a></button>
             </div>
         </div>
@@ -122,7 +122,7 @@
         <!-- Perth's Pink Painter -->
         <div class="row">
             <div class="screenshot">
-                <img src="images/PP.png" alt="">
+                <img src="images/PP.jpg" alt="">
             </div>
             <div class="text-box alt">
                 <h3>Perth's Pink Painter</h3>
@@ -142,7 +142,7 @@
                  <button class="project-link"><a href="http://jessica-budd.com" target="blank">View Project</a></button>
             </div>
             <div  class="screenshot">
-                <img src="images/JB2.png" alt="">
+                <img src="images/JB2.jpg" alt="">
             </div>
         </div><!-- /.row -->
         
@@ -156,7 +156,21 @@
 <footer>
         <p class="footer">&copy; copyright 2016. <a href="http://www.jessica-budd.com" target="_blank">Jessica Budd</a></p>
 </footer>
-</div>
+
+    <!-- CDN jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+    <!--local jQuery if CDN fails to load-->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');</script>
+
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
 
 </body>
 
