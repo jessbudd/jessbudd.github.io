@@ -277,7 +277,8 @@ img {
 	margin-top: 20px;
 }
 .project-link:hover,
-.project-link:active {
+.project-link:active,
+.project-link:visited  {
 	text-decoration: none;
 	transition: 0.2s;
 	border:#ffa6a7 2px solid;
@@ -338,10 +339,10 @@ a.close-overlay {
   height: 45px;
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: #555;
   line-height: 45px;
   text-align: center;
-  background-color: #000;
+  background: rgba(256, 256, 256, 0.8);
   cursor: pointer;
 }
 a.close-overlay.hidden {
