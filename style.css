@@ -65,6 +65,7 @@ ul {
 	background-image: url("images/bg-pic.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
+	display: block;
 }
 #intro {
 	padding-top:8%;
@@ -211,31 +212,6 @@ img {
 display:none;
 }
 
-button {
- 	display: inline;	
-	font: bold 1.3em;
-	text-decoration:none;	
-	background-color:transparent;
-	height: 80px;
-	width: 250px;
-	transition: .3s;
-	margin-bottom: 50px;
-}
-.project-link {
-	font-weight: bold;
-	color: #ff4447;
-	border: #ff4447 2px solid;
-}
-.project-link a {
-	padding:50px 69px;
-}
-.project-link:hover,
-.project-link:active {
-	text-decoration: none;
-	transition: 0.2s;
-	border:#ffa6a7 2px solid;
-}
-
 @media screen and (min-width: 760px) {
 .container-projects {
 	padding: 80px 0 0px 0;
@@ -268,7 +244,8 @@ img {
 }
 .project-link {	
 	display: inline-block;
-	font: bold 1.3em;
+	font-size: 1.3em;
+	font-weight: bold;
 	color: #ff4447;
 	border: #ff4447 2px solid;
 	transition: .3s;
@@ -286,7 +263,6 @@ img {
 	width:50%;
 	float:left;
 	height: 400px;
-	overflow: hidden;
 }
 }
 
