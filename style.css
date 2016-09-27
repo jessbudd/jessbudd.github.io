@@ -70,11 +70,11 @@ ul {
 #intro {
 	padding-top:8%;
 }
-.intro1 {
+#intro1 {
 	font-size: 10vmin;
 	padding: 40px 1% 10px 1%;
 }
-.intro2 {
+#intro2 {
 	font-size: 7vmin;
 	padding: 0 1% 5% 1%;
 }
@@ -117,6 +117,7 @@ a:focus {
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: left;
+	display: block;
 }
 .bio {
 	border-radius: 50%;
@@ -173,6 +174,7 @@ a:focus {
 	background-size: 100%;
 	background-position: top left;
 	border: solid 1px #efefef;
+	display: block;
 }
 
 h3 {
