@@ -250,7 +250,7 @@ h3 {
 }
 h4 {
 	font-size: 1.2em;
-	padding:10px 15%;
+	padding:10px 100px;
 /*	line-height: 1.8;*/
 }
 
@@ -266,23 +266,15 @@ img {
 	background: #fff;
 	display: block;
 }
-button {
- 	display: inline;	
+.project-link {	
+	display: inline-block;
 	font: bold 1.3em;
-	text-decoration:none;	
-	background-color:transparent;
-	height: 80px;
-	width: 250px;
-	transition: .3s;
-	margin: 50px 0;
-}
-.project-link {
-	font-weight: bold;
 	color: #ff4447;
 	border: #ff4447 2px solid;
-}
-.project-link a {
-	padding:50px 69px;
+	transition: .3s;
+	padding: 30px 60px;
+	text-decoration:none;
+	margin-top: 20px;
 }
 .project-link:hover,
 .project-link:active {
@@ -342,8 +334,8 @@ a.close-overlay {
   top: 0;
   right: 0;
   z-index: 100;
-/*  width: 45px;
-  height: 45px;*/
+  width: 45px;
+  height: 45px;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
