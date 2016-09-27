@@ -342,7 +342,6 @@ a.close-overlay {
   color: #555;
   line-height: 45px;
   text-align: center;
-  background: rgba(256, 256, 256, 0.8);
   cursor: pointer;
 }
 a.close-overlay.hidden {
